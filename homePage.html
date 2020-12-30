@@ -7,16 +7,96 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projectStyles.css" />
 
     <title>Cafe Cervantes</title>
 </head>
 <body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Cafe Cervantes</h1>
+                    <h2>The best way to start and end your day</h2>
+                </div>
+                <div class="col">
+                    <a role="button" class="btn btn-secondary btn-lg mt-4" data-toggle="modal" data-target="#eventModal">Schedule Event</a>
+                </div>
+                <!--fix responsiveness ^^^-->
+            </div>
+        </div>
+    </header>
 
+    <div id="eventModal" class="modal fade" role="dialog">
+        <div class="modal-lg modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h3 class="modal-title">Schedule an Event</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row form-row">
+                                <div class="col-md-6">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="John Doe"/>
+                                    <!--class="form-control-sm" experiment ^^^-->
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="#123-456-7890"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-row">
+                                <div class="col">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="example@email.com"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-row">
+                                <div class="col-md-6">
+                                    <label for="numAtt" class="col-form-control">Number of Attendants</label>
+                                    <div>
+                                        <select class="form-control" name="numAtt" id="numAtt">
+                                            <option>Select...</option>
+                                            <option value="1">0-200</option>
+                                            <option value="2">200-500</option>
+                                            <option value="3">500+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="date" class="col-form-control">Date</label>
+                                    <div>
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="date" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row form-row">
+                                <div class="col">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Type of Event"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-row">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" rows="5" id="message" placeholder="Please provide any details about the upcoming event"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
 </body>
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/projectJS.js"></script>
 </html>
