@@ -1,8 +1,8 @@
 {
-  "name": "nucampsite",
+  "name": "cafe",
   "version": "1.0.0",
-  "description": "This is a website for the fictional campsites review site Nucamp",
-  "main": "index.html",
+  "description": "This is my first website built using bootstrap",
+  "main": "homePage.html",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",

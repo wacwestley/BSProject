@@ -1,0 +1,27 @@
+body{
+    background-color: #C5742C;
+    color: white;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-color: #7E8D9C;
+}
+
+.navbar {
+    background-color: #4D6E7F;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#7E8D9C;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
