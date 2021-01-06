@@ -5,9 +5,16 @@ $beige: #D5C9BB;
 $orange: #C5742C;
 $burntOrange: #813D18;
 
+$body-font: "Work Sans", sans-serif;
+
 body{
     background-color: $orange;
     color: white;
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    
 }
 
 .jumbotron {
@@ -29,8 +36,8 @@ a:hover {
     color:$lightBlue;
 }
 
-#breadcrumb {
-    color: $lightBlue;
+.breadcrumb-item+.breadcrumb-item::before, .breadcrumb-item.active {
+    color: $beige;
 }
 
 .breadcrumb {

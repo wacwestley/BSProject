@@ -1,6 +1,7 @@
 body {
   background-color: #C5742C;
-  color: white; }
+  color: white;
+  font-family: "Work Sans", sans-serif; }
 
 .jumbotron {
   margin: 0;
@@ -17,8 +18,8 @@ a, a:link {
 a:hover {
   color: #7E8D9C; }
 
-#breadcrumb {
-  color: #7E8D9C; }
+.breadcrumb-item + .breadcrumb-item::before, .breadcrumb-item.active {
+  color: #D5C9BB; }
 
 .breadcrumb {
   background-color: #813D18; }
