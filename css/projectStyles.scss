@@ -1,0 +1,46 @@
+$darkBlue: #333D45;
+$blue: #4D6E7F;
+$lightBlue: #7E8D9C;
+$beige: #D5C9BB;
+$orange: #C5742C;
+$burntOrange: #813D18;
+
+body{
+    background-color: $orange;
+    color: white;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-color: $lightBlue;
+}
+
+.navbar {
+    background-color: $blue;
+}
+
+a, a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:$lightBlue;
+}
+
+#breadcrumb {
+    color: $lightBlue;
+}
+
+.breadcrumb {
+    background-color: $burntOrange;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.site-footer {
+    background-color: $burntOrange;
+}
