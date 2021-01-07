@@ -4,7 +4,8 @@ $lightBlue: #7E8D9C;
 $beige: #D5C9BB;
 $orange: #C5742C;
 $burntOrange: #813D18;
-
+$black-transparent: rgba(0, 0, 0, 0.5);
+$head-font: "Courgette", cursive;
 $body-font: "Work Sans", sans-serif;
 
 body{
@@ -12,14 +13,17 @@ body{
     color: white;
     font-family: $body-font;
 }
+h1 {
+    font-size: 4rem;
+}
 
 h1, h2, h3 {
-    
+    font-family: $head-font;
 }
 
 .jumbotron {
     margin: 0;
-    padding: 30px;
+    padding: 10px;
     background-color: $lightBlue;
 }
 
@@ -46,6 +50,14 @@ a:hover {
 
 .navbar-toggler-icon{
     color: white;
+}
+
+#cafeCarousel {
+    position: relative;
+}
+
+.carousel-caption {
+    background-color: $black-transparent;
 }
 
 .site-footer {

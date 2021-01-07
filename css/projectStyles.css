@@ -3,9 +3,15 @@ body {
   color: white;
   font-family: "Work Sans", sans-serif; }
 
+h1 {
+  font-size: 4rem; }
+
+h1, h2, h3 {
+  font-family: "Courgette", cursive; }
+
 .jumbotron {
   margin: 0;
-  padding: 30px;
+  padding: 10px;
   background-color: #7E8D9C; }
 
 .navbar {
@@ -26,6 +32,12 @@ a:hover {
 
 .navbar-toggler-icon {
   color: white; }
+
+#cafeCarousel {
+  position: relative; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .site-footer {
   background-color: #813D18; }
