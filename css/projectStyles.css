@@ -14,6 +14,12 @@ h1, h2, h3 {
   padding: 10px;
   background-color: #7E8D9C; }
 
+#modalHeader {
+  background-color: #4D6E7F; }
+
+#modalBody {
+  background-color: #C5742C; }
+
 .navbar {
   background-color: #4D6E7F; }
 
