@@ -14,98 +14,99 @@
     <title>Cafe Cervantes</title>
 </head>
 <body>
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Cafe Cervantes</h1>
-                    <h2>The best way to start and end your day</h2>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div id="eventModal" class="modal fade" role="dialog">
-        <div class="modal-lg modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-secondary text-white">
-                    <h3 class="modal-title">Schedule an Event</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="form-group row form-row">
-                                <div class="col-md-6">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="John Doe"/>
-                                    <!--class="form-control-sm" experiment ^^^-->
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="#123-456-7890"/>
-                                </div>
-                            </div>
-                            <div class="form-group row form-row">
-                                <div class="col">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="example@email.com"/>
-                                </div>
-                            </div>
-                            <div class="form-group row form-row">
-                                <div class="col-md-6">
-                                    <label for="numAtt" class="col-form-control">Number of Attendants</label>
-                                    <div>
-                                        <select class="form-control" name="numAtt" id="numAtt">
-                                            <option>Select...</option>
-                                            <option value="1">0-200</option>
-                                            <option value="2">200-500</option>
-                                            <option value="3">500+</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="date" class="col-form-control">Date</label>
-                                    <div>
-                                        <input class="form-control" type="date" id="date" name="date" placeholder="date" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row form-row">
-                                <div class="col">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" class="form-control" id="subject" placeholder="Type of Event"/>
-                                </div>
-                            </div>
-                            <div class="form-group row form-row">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" rows="5" id="message" placeholder="Please provide any details about the upcoming event"></textarea>
-                            </div>
-                        </form>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>Cafe Cervantes</h1>
+                        <h2>The best way to start and end your day</h2>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cafeNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="cafeNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="homePage.html">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Our Story</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cafeNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="cafeNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="homePage.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Our Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <a role="button" class="btn btn-secondary btn-lg float-right" data-toggle="modal" data-target="#eventModal">Schedule Event</a>
+                </div>
             </div>
-            <div class="col">
-                <a role="button" class="btn btn-secondary btn-lg float-right" data-toggle="modal" data-target="#eventModal">Schedule Event</a>
+        </nav>
+
+        <div id="eventModal" class="modal fade" role="dialog">
+            <div class="modal-lg modal-dialog" role="document">
+                <div class="modal-content">
+                    <div id="modalHeader" class="modal-header text-white">
+                        <h3 class="modal-title">Schedule an Event</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="row form-row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="John Doe"/>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="#123-456-7890"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row form-row">
+                                    <div class="col">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="example@email.com"/>
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="numAtt" class="col-form-control">Number of Attendants</label>
+                                        <div>
+                                            <select class="form-control" name="numAtt" id="numAtt">
+                                                <option>Select...</option>
+                                                <option value="1">0-200</option>
+                                                <option value="2">200-500</option>
+                                                <option value="3">500+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="date" class="col-form-control">Date</label>
+                                        <div>
+                                            <input class="form-control" type="date" id="date" name="date" placeholder="date" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row form-row">
+                                    <div class="col">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Type of Event"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row form-row">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" rows="5" id="message" placeholder="Please provide any details about the upcoming event"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -117,7 +118,6 @@
                 <hr />
             </div>
         </div>
-
     </div>
     <footer class="site-footer mb-0">
         <div class="container">
