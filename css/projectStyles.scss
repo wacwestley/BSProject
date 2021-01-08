@@ -64,6 +64,31 @@ a:hover {
     background-color: $black-transparent;
 }
 
+.btn-primary {
+    background-color: $lightBlue;
+    border-color: $lightBlue;
+}
+
+.btn-light {
+    background-color: $beige;
+    border-color: $beige;
+}
+
+.map-responsive {
+    overflow:hidden;
+    position:relative;
+    height: 250px;
+    border-radius: .25rem;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .site-footer {
-    background-color: $burntOrange;
+    background-color: $burntOrange; 
 }

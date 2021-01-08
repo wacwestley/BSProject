@@ -100,6 +100,7 @@
                                     <label for="message">Message</label>
                                     <textarea class="form-control" rows="5" id="message" placeholder="Please provide any details about the upcoming event"></textarea>
                                 </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -118,7 +119,68 @@
                 <hr />
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-6">
+                <p>Let us know if you found that right cup of coffee or if you need assistance finding lost items and everything in between.</p>
+                <div>
+                    <p class="mb-0">Cafe Cervantes</p>
+                    <p class="mb-0">123 5th street</p>
+                    <p class="mb-0">Chattanooga, TN 37403</p>
+                    <p>123-456-7890</p>
+                </div>
+            </div>
+            <div class="col-6 map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209079.6631399909!2d-85.29603436893733!3d35.034988568114635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1610106485888!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form class="py-2">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                          <label for="contactFName">First name</label>
+                          <input type="text" class="form-control" id="contactFName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="contactLName">Last name</label>
+                          <input type="text" class="form-control" id="contactLName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="example@email.com">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="contactAddress">Address</label>
+                      <input type="text" class="form-control" id="contactAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="contactCity">City</label>
+                        <input type="text" class="form-control" id="contactCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="contactState">State</label>
+                        <select id="contactState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="contactZip">Zip</label>
+                        <input type="text" class="form-control" id="contactZip">
+                      </div>
+                    </div>
+                    <div class="form-group row form-row">
+                        <label for="contactMessage">Message</label>
+                        <textarea class="form-control" rows="5" id="contactMessage" placeholder="Please provide as many details as possible."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light">Submit</button>
+                  </form>
+            </div>
+        </div>
     </div>
     <footer class="site-footer mb-0">
         <div class="container">

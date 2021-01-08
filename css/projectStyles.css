@@ -42,5 +42,26 @@ a:hover {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.btn-primary {
+  background-color: #7E8D9C;
+  border-color: #7E8D9C; }
+
+.btn-light {
+  background-color: #D5C9BB;
+  border-color: #D5C9BB; }
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  border-radius: .25rem; }
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
 .site-footer {
   background-color: #813D18; }
