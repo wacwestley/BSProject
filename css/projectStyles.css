@@ -1,3 +1,4 @@
+/*global*/
 body {
   background-color: #C5742C;
   color: white;
@@ -20,6 +21,10 @@ h1, h2, h3 {
 .navbar {
   background-color: #4D6E7F; }
 
+a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
 a, a:link {
   color: white;
   text-decoration: none; }
@@ -36,16 +41,31 @@ a:hover {
 .navbar-toggler-icon {
   color: white; }
 
+.btn-primary {
+  background-color: #7E8D9C;
+  border-color: #7E8D9C; }
+
+.site-footer {
+  background-color: #813D18; }
+
+/*homePage*/
 #cafeCarousel {
   position: relative; }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.btn-primary {
-  background-color: #7E8D9C;
-  border-color: #7E8D9C; }
+/*ourStory*/
+/*menu*/
+.bg-dark {
+  background-color: #813D18 !important; }
 
+.bg-light {
+  background-color: #D5C9BB !important;
+  color: #212529; }
+
+/*venue*/
+/*contactUs*/
 .btn-light {
   background-color: #D5C9BB;
   border-color: #D5C9BB; }
@@ -62,6 +82,3 @@ a:hover {
   height: 100%;
   width: 100%;
   position: absolute; }
-
-.site-footer {
-  background-color: #813D18; }

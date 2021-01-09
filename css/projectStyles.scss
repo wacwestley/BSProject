@@ -8,6 +8,7 @@ $black-transparent: rgba(0, 0, 0, 0.5);
 $head-font: "Courgette", cursive;
 $body-font: "Work Sans", sans-serif;
 
+/*global*/
 body{
     background-color: $orange;
     color: white;
@@ -35,6 +36,11 @@ h1, h2, h3 {
     background-color: $blue;
 }
 
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
 a, a:link {
     color: white;
     text-decoration: none;
@@ -56,6 +62,17 @@ a:hover {
     color: white;
 }
 
+.btn-primary {
+    background-color: $lightBlue;
+    border-color: $lightBlue;
+}
+
+.site-footer {
+    background-color: $burntOrange; 
+}
+
+/*homePage*/
+
 #cafeCarousel {
     position: relative;
 }
@@ -64,10 +81,22 @@ a:hover {
     background-color: $black-transparent;
 }
 
-.btn-primary {
-    background-color: $lightBlue;
-    border-color: $lightBlue;
+/*ourStory*/
+
+/*menu*/
+
+.bg-dark {
+    background-color: $burntOrange!important;
 }
+
+.bg-light {
+    background-color: $beige!important;
+    color: #212529;
+}
+
+/*venue*/
+
+/*contactUs*/
 
 .btn-light {
     background-color: $beige;
@@ -87,8 +116,4 @@ a:hover {
     height:100%;
     width:100%;
     position:absolute;
-}
-
-.site-footer {
-    background-color: $burntOrange; 
 }
