@@ -15,6 +15,9 @@ h1, h2, h3 {
   padding: 10px;
   background-color: #7E8D9C; }
 
+form {
+  color: black; }
+
 #modalHeader {
   background-color: #4D6E7F; }
 
