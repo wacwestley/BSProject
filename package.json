@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is my first website built using bootstrap",
   "main": "index.html",
-  "index": "https://wacwestley.github.io/Cafe_Cervantes_Bootstrap",
+  "index": "https://wacwestley.github.io/Cafe_Cervantes_Bootstrap/",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",
