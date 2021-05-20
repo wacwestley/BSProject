@@ -1,8 +1,9 @@
 {
-  "name": "cafe",
+  "name": "cafe_cervantes_bootstrap",
   "version": "1.0.0",
   "description": "This is my first website built using bootstrap",
   "main": "homePage.html",
+  "homepage": "https://wacwestley.github.io/Cafe_Cervantes_Bootstrap",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",
@@ -14,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "usemin": "usemin homePage.html -d dist --htmlmin -o dist/homePage.html && usemin ourStory.html -d dist --htmlmin -o dist/ourStory.html && usemin menu.html -d dist --htmlmin -o dist/menu.html && usemin venue.html -d dist --htmlmin -o dist/venue.html && usemin contactUs.html -d dist --htmlmin -o dist/contactUs.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "deploy":"gh-pages -d dist"
   },
   "author": "Westley Cervantes",
   "license": "ISC",
