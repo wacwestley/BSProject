@@ -70,7 +70,7 @@ Thanks for taking the time to view!
 
 If running locally from github:
 
-Make sure you have Node.js installed it does not have a true backend but a
-    small amount of node is there when navigating between the pages.
+Please make sure you have Node.js installed it does not have a true backend
+    but a small amount of node is there when navigating between the pages.
 Within your terminal install the dependancies with "npm i".
 Then to start the project use "npm start".
